@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import "../styles/Driver.css";
-
 export default function UserPage() {
   const [status, setStatus] = useState("Online");
-
   const [trips, setTrips] = useState([
     { id: 1, from: "Chennai", to: "Bangalore", load: "Electronics", date: "15 Nov 2025", status: "Completed" },
     { id: 2, from: "Bangalore", to: "Chennai", load: "Furniture", date: "19 Nov 2025", status: "Completed" },
     { id: 3, from: "Chennai", to: "Coimbatore", load: "Clothing", date: "25 Nov 2025", status: "Upcoming" }
   ]);
-
   const [newTrip, setNewTrip] = useState({
     from: "",
     to: "",
@@ -31,7 +28,7 @@ export default function UserPage() {
 
     setTrips([...trips, tripToAdd]);
 
-    setNewTrip({ from: "", to: "", load: "", date: "", status: "Upcoming" }); // reset form
+    setNewTrip({ from: "", to: "", load: "", date: "", status: "Upcoming" }); 
   };
 
   return (

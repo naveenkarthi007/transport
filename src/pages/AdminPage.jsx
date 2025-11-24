@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Admin.css";
 import { useNavigate } from "react-router-dom";
-
 export default function AdminPage() {
   const navigate = useNavigate();
 
@@ -10,13 +9,11 @@ export default function AdminPage() {
     { id: 2, name: "Suresh", status: "Offline", trips: 3 },
     { id: 3, name: "Prakash", status: "Online", trips: 7 },
   ]);
-
   return (
     <div className="admin-container">
       <div className="admin-box">
         <h2 className="title">Admin Dashboard</h2>
         <h3 className="subtitle">Drivers List</h3>
-
         <table className="admin-table">
           <thead>
             <tr>
